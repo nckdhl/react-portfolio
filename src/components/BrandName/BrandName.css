@@ -1,5 +1,96 @@
-#brand-name {
+.brand-name {
     font-family: 'Berkshire Swash', cursive;
     font-size: 5em;
 }
 
+/* Animation for nckdhl BrandName text */
+
+/* Vowels i and a fade in */
+.vowel {
+    opacity: 0;
+    animation: appear-vowel 10s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear-vowel {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+/* N slides to the left */
+.n {
+    margin-right: -0.1em;
+    animation-duration: 7s;
+    animation-name: n-slide-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes n-slide-out {
+    from {
+      margin-right: -0.1em;
+    }
+  
+    to {
+      margin-right: 0em;
+    }
+  }
+
+/* CK slides to the right */
+.ck {
+    margin-left: -0.2em;
+    animation-duration: 7s;
+    animation-name: ck-slide-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes ck-slide-out {
+    from {
+      margin-left: -0.2em;
+    }
+  
+    to {
+      margin-left: 0em;
+    }
+  }
+
+/* D slides to the left */
+.d {
+    margin-right: -0.2em;
+    animation-duration: 7s;
+    animation-name: d-slide-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes d-slide-out {
+    from {
+      margin-right: -0.2em;
+    }
+  
+    to {
+      margin-right: 0em;
+    }
+  }
+
+/* HL slides to the right */
+.hl {
+    margin-left: -0.3em;
+    animation-duration: 7s;
+    animation-name: hl-slide-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes hl-slide-out {
+    from {
+      margin-left: -0.2em;
+    }
+  
+    to {
+      margin-left: 0em;
+    }
+  }

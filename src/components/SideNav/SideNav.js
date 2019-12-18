@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MenuButton } from '../MenuButton/MenuButton';
 import './SideNav.css';
 
-export class SideNavContainer extends Component {
+export class SideNav extends Component {
 
   constructor (props) {
     super(props);
