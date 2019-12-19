@@ -1,40 +1,70 @@
 /* The sidebar menu */
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 100; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    right: 0;
-    background-color: transparent; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  height: 100%;
+  /* 100% Full-height */
+  width: 75px;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 10px;
+  /* Place content 60px from the top */
+  transition: all 0.2s linear;
+  transition-property: width, background-color;
+}
+
+.sidebar.expanded {
+  width: 200px;
+  height: 99%;
+  /* background-color:rgba(220,220,220,1); */
+  background-color: #212529;
+  color: oldlace;
+  border-radius: 1em;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  box-shadow: inset 0 0 2px rgba(77, 52, 52, 1);
+}
+
+.sidebar.collapsed {
+  width: 75px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar.expanded {
+    width: 99%;
   }
+}
+
+.links-container li::before {
+  content: "/";
+}
+
+.links-container {
+  font-family: 'Lato', sans-serif;
+  margin-top: 10rem;
+  font-size: 1.5em;
+  text-align: left;
+  list-style: none;
+}
+
+.links-container.collapsed {
+  opacity: 0;
+}
+
+.links-container.expanded {
   
-  /* When you mouse over the navigation links, change their color */
-  .sidebar:hover {
-    color: #f1f1f1;
-    background-color: beige;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+  opacity: 1;
+}
+
+.links-container li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
