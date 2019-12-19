@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './MenuButton.css';
 
-function MenuButton({ collapsed }) {
-    return (
-      <span className={`json-burger ${(collapsed ? 'collapsed' : 'expanded' )}`}>
+export class MenuButton extends Component {
+
+render () {
+  const { collapsed, toggleNavbar } = this.props;
+  return (
+    <span 
+        className={`json-burger ${(collapsed ? 'collapsed' : 'expanded' )}`}
+        onClick={toggleNavbar.bind(this)}
+      >
           {'[{}]'}
       </span>
-    );
+  );
 }
-
-export default MenuButton;
+}
