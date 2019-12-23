@@ -8,7 +8,7 @@ render () {
   return (
     <span 
         className={`json-burger ${(collapsed ? 'collapsed' : 'expanded' )}`}
-        onClick={toggleNavbar.bind(this)}
+        onClick={toggleNavbar}
       >
           {'[{}]'}
       </span>

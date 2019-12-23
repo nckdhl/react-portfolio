@@ -4,30 +4,17 @@ import './SideNav.css';
 
 export class SideNav extends Component {
 
-  constructor (props) {
-    super(props);
+  render (props) {
 
-    //this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
+    const { collapsed, toggleNavbar } = this.props;
 
-  toggleNavbar = () => {
-    console.log("Clicked - toggled");
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
-
-  render () {
     return (
-      <div className={`sidebar ${(this.state.collapsed ? 'collapsed' : 'expanded' )}`}>
+      <div className={`sidebar ${(collapsed ? 'collapsed' : 'expanded' )}`}>
         <MenuButton 
-        toggleNavbar={this.toggleNavbar}
-        collapsed={this.state.collapsed}
+          toggleNavbar={toggleNavbar}
+          collapsed={collapsed}
         />
-        <ul className={`links-container ${(this.state.collapsed ? 'collapsed' : 'expanded' )}`}>
+        <ul className={`links-container ${(collapsed ? 'collapsed' : 'expanded' )}`}>
           <li>About Me</li>
           <li>Projects</li>
           <li>Resume</li>

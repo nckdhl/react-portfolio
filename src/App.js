@@ -5,11 +5,29 @@ import './App.css';
 
 export class App extends Component {
 
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      collapsed: true
+    };
+  }
+
+  toggleNavbar = () => {
+    console.log("Clicked - toggled");
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+
   render () {
     return (
       <div className="App">
         <ContentArea />
-        <SideNav />
+        <SideNav 
+          toggleNavbar={this.toggleNavbar}
+          collapsed={this.state.collapsed}
+        />
       </div>
     );
   }
