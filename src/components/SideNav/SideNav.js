@@ -1,13 +1,39 @@
 import React, { Component } from 'react';
 import { MenuButton } from '../MenuButton/MenuButton';
+import NavLink from './NavLink';
+
 import './SideNav.css';
 
 export class SideNav extends Component {
+  constructor (props) {
+    super(props);
 
-  render (props) {
+    this.state = {
+        Links: [
+          {
+            title: 'About Me'
+          },
+          {
+            title: 'Projects'
+          },
+          {
+            title: 'Resume'
+          },
+          {
+            title: 'Contact'
+          }
+        ]
+    };
+}
 
-    const { collapsed, toggleNavbar } = this.props;
 
+  render () {
+
+    const { collapsed, toggleNavbar, showPage } = this.props;
+    let links = this.state.Links.map((link) => (
+      <NavLink key={link.title} linkTitle={link.title} showPage={showPage}/>
+    ));
+ 
     return (
       <div className={`sidebar ${(collapsed ? 'collapsed' : 'expanded' )}`}>
         <MenuButton 
@@ -15,10 +41,7 @@ export class SideNav extends Component {
           collapsed={collapsed}
         />
         <ul className={`links-container ${(collapsed ? 'collapsed' : 'expanded' )}`}>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          {links}
         </ul>
       </div>  
     );

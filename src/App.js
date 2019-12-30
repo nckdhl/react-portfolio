@@ -9,7 +9,8 @@ export class App extends Component {
     super(props);
 
     this.state = {
-      collapsed: true
+      collapsed: true,
+      showPage: ''
     };
   }
 
@@ -20,11 +21,19 @@ export class App extends Component {
     });
   }
 
+  togglePage = (pageName) => {
+    console.log("Page - toggled");
+    this.setState({
+      showPage: pageName
+    });
+  }
+
   render () {
     return (
       <div className="App">
-        <ContentArea />
-        <SideNav 
+        <ContentArea showPage={this.state.showPage} />
+        <SideNav
+          showPage={this.togglePage} 
           toggleNavbar={this.toggleNavbar}
           collapsed={this.state.collapsed}
         />
