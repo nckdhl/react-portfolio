@@ -2,9 +2,14 @@ import React from 'react';
 
 function NavLink (props) {
   
-  const { linkTitle, showPage } = props;
+  const { linkTitle, showPage, toggleNavbar } = props;
 
-  return (<li onClick={showPage.bind(this, linkTitle)}>
+  const toggleView = () => {
+    toggleNavbar();
+    showPage.bind(this, linkTitle);
+  }
+
+  return (<li onClick={toggleView}>
             {linkTitle}
           </li>);
 
