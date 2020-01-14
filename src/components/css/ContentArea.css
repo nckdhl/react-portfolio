@@ -13,3 +13,9 @@ h1 {
     color: #212529;
 }
 
+@media screen and (min-width: 480px) {
+    .ContentArea {
+        width: 50%;
+    }
+  }
+

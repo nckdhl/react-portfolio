@@ -37,12 +37,6 @@
   background-color: transparent;
 }
 
-@media screen and (max-width: 480px) {
-  .sidebar.expanded {
-    width: 99%;
-  }
-}
-
 .links-container li::before {
   content: "/";
 }
@@ -71,4 +65,14 @@ img {
   padding: 0px;
   margin-top: 50px;
   height: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar.expanded {
+    width: 99%;
+  }
+  img {
+    height: 40%;
+    margin-top: 25px;
+  }
 }

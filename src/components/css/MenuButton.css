@@ -1,6 +1,7 @@
 .json-burger {
+    color: #212529;
     font-family: 'Berkshire Swash', cursive;
-    font-size: 2em;
+    font-size: 3em;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     cursor: pointer;
@@ -37,6 +38,7 @@
 /* Position and style the json-burger button (top left corner) */
 .json-burger.expanded {
     position: absolute;
+    font-size: 2em;
     top: 1%;
     left: 8%;
     color: oldlace;
@@ -50,9 +52,9 @@
 }
 
 @media screen and (max-width: 480px) {
-    .json-burger {
+    /* .json-burger {
         font-size: 1.5em;
-    }
+    } */
 
     .json-burger.expanded {
         right: initial;
