@@ -9,7 +9,7 @@ export class App extends Component {
     super(props);
 
     this.state = {
-      collapsed: true,
+      collapsed: window.innerWidth < 769 ? true : false,
       showPage: ''
     };
   }

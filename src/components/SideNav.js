@@ -10,16 +10,16 @@ export class SideNav extends Component {
     this.state = {
       Links: [
         {
-          title: "About Me"
+          title: "ABOUT"
         },
         {
-          title: "Projects"
+          title: "PROJECTS"
         },
         {
-          title: "Resume"
+          title: "RESUME"
         },
         {
-          title: "Contact"
+          title: "CONTACT"
         }
       ]
     };
@@ -44,7 +44,7 @@ export class SideNav extends Component {
       <div className={`sidebar ${collapsed ? "collapsed" : "expanded"}`}>
         <MenuButton toggleNavbar={toggleNavbar} collapsed={collapsed} />
         <img
-          className={`links-container ${collapsed ? "collapsed" : "expanded"}`}
+          className={`${collapsed ? "collapsed" : "expanded"}`}
           src={headshot}
           alt="My son and I in the Alps"
         />

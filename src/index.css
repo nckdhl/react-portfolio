@@ -1,7 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@font-face {
+  font-family: 'bgBlack';
+
+	src: url('./assets/fonts/Brandon_blk.woff') format('woff'); 
+	
+	font-weight: normal;
+	font-style: normal;
+	font-smooth: always;
+}
+
+@font-face {
+  font-family: 'bgBold';
+  
+	src: url('./assets/fonts/Brandon_bld.woff') format('woff');
+	
+	font-weight: normal;
+	font-style: normal;
+	font-smooth: always;
+}
+
+@font-face {
+  font-family: 'bgMed';
+  
+	src: url('assets/fonts/Brandon_med.woff') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+	font-smooth: always;
+}
 
 body {
-  background-image: url('./images/grasslands.jpg');
+  background-image: url('./assets/images/siora-unsplash.jpg');
 }
 

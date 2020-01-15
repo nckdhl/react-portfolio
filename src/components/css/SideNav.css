@@ -1,5 +1,6 @@
 /* The sidebar menu */
 .sidebar {
+  font-family: 'bgBold';
   height: 100%;
   /* 100% Full-height */
   width: 75px;
@@ -22,13 +23,13 @@
 
 .sidebar.expanded {
   width: 200px;
-  height: 99%;
+  /* height: 99%; */
   /* background-color:rgba(220,220,220,1); */
-  background-color: #212529;
+  background-color: rgba(33,37,41,0.9);
   color: oldlace;
-  border-radius: 1em;
+  /* border-radius: 1em;
   margin-top: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 100px; */
   box-shadow: inset 0 0 2px rgba(77, 52, 52, 1);
 }
 
@@ -42,7 +43,6 @@
 }
 
 .links-container {
-  font-family: 'Lato', sans-serif;
   font-size: 1.5em;
   text-align: left;
   list-style: none;
@@ -67,12 +67,26 @@ img {
   height: 20%;
 }
 
+img.expanded {
+  opacity: 1;
+}
+
+img.collapsed {
+  opacity: 0;
+}
+
 @media screen and (max-width: 480px) {
+
   .sidebar.expanded {
     width: 99%;
   }
+
   img {
     height: 40%;
     margin-top: 25px;
+  }
+
+  .links-container.expanded {
+    margin-left: 77px;
   }
 }

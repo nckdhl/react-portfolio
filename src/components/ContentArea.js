@@ -9,10 +9,10 @@ function ContentArea(props) {
   let content;
 
   switch (props.showPage) {
-    case "Projects":
+    case "PROJECTS":
       content = <ProjectContainer />;
       break;
-    case "About Me":
+    case "ABOUT":
       console.log("About Me shown");
       content = (
         <div>
@@ -38,11 +38,11 @@ function ContentArea(props) {
         </div>
       );
       break;
-    case "Contact":
+    case "CONTACT":
       console.log("Contact shown");
       content = <Form />;
       break;
-    case "Resume":
+    case "RESUME":
       console.log("Resume shown");
       content = (
         <object
@@ -64,17 +64,19 @@ function ContentArea(props) {
     <div className="ContentArea">
       <div>
         <h1 className="brand-name" href="#">
-          <span className="n">n</span>
-          <span className="vowel">i</span>
-          <span className="ck">ck</span>
-          <span className="d">d</span>
-          <span className="vowel">a</span>
-          <span className="hl">hl</span>
+          <span className="im">I'M &nbsp;</span>
+          <span className="n">N</span>
+          <span className="vowel">I</span>
+          <span className="ck">CK</span>
+          <span className="space">&nbsp;</span>
+          <span className="d">D</span>
+          <span className="vowel">A</span>
+          <span className="hl">HL</span>
+          <span className="dot">,</span>
         </h1>
       </div>
       <div className="AboutMeBlurb">
-        <h4>Hi, my name is Nick.</h4>
-        <h4>I'm a Software Development student at Mohawk College.</h4>
+        <h4>STUDENT OF SOFTWARE DEVELOPMENT AT MOHAWK COLLEGE.</h4>
       </div>
       {content}
     </div>

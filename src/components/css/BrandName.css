@@ -1,113 +1,174 @@
 .brand-name {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 5em;
+  margin-top: 50px;
+  font-family: "bgBlack";
+  /* font-family: 'Berkshire Swash', cursive; */
+  font-size: 5em;
+  /* margin-left: -1.5em; */
 }
 
 @media screen and (max-width: 768px) {
-    .brand-name {
-        font-size: 4em;
-    }
+  .brand-name {
+    font-size: 4em;
+  }
 }
 @media screen and (max-width: 480px) {
-    .brand-name {
-        font-size: 3em;
-    }
+  .brand-name {
+    margin-top: 60px;
+    font-size: 3em;
+  }
 }
 @media screen and (max-width: 320px) {
-    .brand-name {
-        font-size: 2em;
-    }
+  .brand-name {
+    font-size: 2em;
+  }
 }
-
 
 /* Animation for nckdhl BrandName text */
 
 /* Vowels i and a fade in */
 .vowel {
-    opacity: 0;
-    animation: appear-vowel 10s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation: appear 10s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes appear-vowel {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 1; }
+.dot {
+  /* margin-left: -0.3em; */
+  opacity: 0;
+  animation-name: appear, dot-slide-out;
+  animation-duration: 7s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.im {
+  /* margin-right: -1.7em; */
+  /* margin-right: 3em; */
+  opacity: 0;
+  animation-name: appear, im-slide-out;
+  animation-duration: 7s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes im-slide-out {
+  from {
+    margin-right: -1.7em;
+  }
+
+  to {
+    margin: -0.3em;
+  }
+}
+
+@keyframes dot-slide-out {
+  from {
+    margin-right: -0.1em;
+  }
+
+  to {
+    margin: initial;
+  }
+} */
 
 /* N slides to the left */
 .n {
-    margin-right: -0.1em;
-    animation-duration: 5s;
-    animation-name: n-slide-out;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+  margin-right: -0.1em;
+  margin-left: -1.5em;
+  /* margin-left: -3em; */
+  animation-duration: 5s;
+  animation-name: n-slide-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @keyframes n-slide-out {
-    from {
-      margin-right: -0.1em;
-    }
-  
-    to {
-      margin-right: 0em;
-    }
+  from {
+    margin-right: -0.1em;
+    margin-left: -1.5em;
   }
+
+  to {
+    margin-right: 0em;
+    margin-left: initial;
+  }
+}
 
 /* CK slides to the right */
 .ck {
-    margin-left: -0.2em;
-    animation-duration: 5s;
-    animation-name: ck-slide-out;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+  margin-left: -0.2em;
+  animation-duration: 5s;
+  animation-name: ck-slide-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @keyframes ck-slide-out {
-    from {
-      margin-left: -0.2em;
-    }
-  
-    to {
-      margin-left: 0em;
-    }
+  from {
+    margin-left: -0.2em;
   }
+
+  to {
+    margin-left: 0em;
+  }
+}
+
+/* Space Pushes Words Out */
+.space {
+  margin-right: -0.2em;
+  animation-duration: 5s;
+  animation-name: d-slide-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
 
 /* D slides to the left */
 .d {
-    margin-right: -0.2em;
-    animation-duration: 5s;
-    animation-name: d-slide-out;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+  margin-right: -0.2em;
+  animation-duration: 5s;
+  animation-name: d-slide-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @keyframes d-slide-out {
-    from {
-      margin-right: -0.2em;
-    }
-  
-    to {
-      margin-right: 0em;
-    }
+  from {
+    margin-right: -0.2em;
   }
+
+  to {
+    margin-right: 0em;
+  }
+}
 
 /* HL slides to the right */
 .hl {
-    margin-left: -0.3em;
-    animation-duration: 5s;
-    animation-name: hl-slide-out;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+  margin-left: -0.5em;
+  animation-duration: 5s;
+  animation-name: hl-slide-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @keyframes hl-slide-out {
-    from {
-      margin-left: -0.2em;
-    }
-  
-    to {
-      margin-left: 0em;
-    }
+  from {
+    margin-left: -0.5em;
   }
+
+  to {
+    margin-left: 0em;
+  }
+}

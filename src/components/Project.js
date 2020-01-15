@@ -6,11 +6,15 @@ export default class Project extends Component {
     render() {
 
         const projectStyle = {
-            backgroundColor: '#212529',
+            backgroundColor: 'rgba(33,37,41,0.9)',
             color: 'oldlace',
-            borderRadius: '1em',
             margin: '1em',
             padding: '1em'
+        }
+
+        const projectTitleStyle = {
+            fontSize: '1.3em',
+            fontFamily: 'bgMed',
         }
 
         const { title, category, thumbnailUrl, altText, description } = this.props.project;
@@ -18,7 +22,7 @@ export default class Project extends Component {
         return (
 
             <div style={projectStyle}>
-                <p>{title}</p>
+                <p style={projectTitleStyle}>{title}</p>
                 <p>{category}</p>
                 <img src={thumbnailUrl} alt={altText}/>
                 <p style={{ maxWidth: '300px'}}>{description}</p>

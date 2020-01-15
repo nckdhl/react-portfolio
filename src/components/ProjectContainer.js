@@ -8,7 +8,7 @@ export default class ProjectContainer extends Component {
         this.state = {
             projects: [
                 {
-                    title: 'Bubbly Mammoth', 
+                    title: 'BUBBLY MAMMOTH', 
                     category: 'Business Website',
                     thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
@@ -16,7 +16,7 @@ export default class ProjectContainer extends Component {
                                  'We sell handmade bubble toys'
                 },
                 {
-                    title: 'Twilio Voice Outbound Client', 
+                    title: 'IN-BROWSER VOIP CLIENT', 
                     category: 'VOIP Javascript Dialer',
                     thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
@@ -25,7 +25,7 @@ export default class ProjectContainer extends Component {
                                  'The back-end is a python Flask app. The front-end is React.'
                 },
                 {
-                    title: 'FocusFarm', 
+                    title: 'FOCUS FARM TO-DO APP', 
                     category: 'Vanilla JS and PHP Webapp',
                     thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
