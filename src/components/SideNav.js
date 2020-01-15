@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import { MenuButton } from "./MenuButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  fab,
+  faGithub,
+  faLinkedinIn
+} from "@fortawesome/free-brands-svg-icons";
 import headshot from "../images/circular-bw-willem-and-i.png";
 import "./css/SideNav.css";
 
@@ -41,27 +47,28 @@ export class SideNav extends Component {
     return (
       <div className={`sidebar ${collapsed ? "collapsed" : "expanded"}`}>
         <MenuButton toggleNavbar={toggleNavbar} collapsed={collapsed} />
-        <img
-          className={`${collapsed ? "collapsed" : "expanded"}`}
-          src={headshot}
-          alt="My son and I in the Alps"
-        />
-        <ul
-          className={`links-container ${collapsed ? "collapsed" : "expanded"}`}
-        >
-          {links}
-        </ul>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/nckdhl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-github">::before</i>
+        <div className={`sidebarWrapper ${collapsed ? "collapsed" : "expanded"}`}>
+          <img
+            src={headshot}
+            alt="My son and I in the Alps"
+          />
+          <ul
+            className="links-container"
+          >
+            {links}
+          </ul>
+
+          <div className="social">
+            <span className="socialIcon">
+              <a href="http://github.com/nckdhl" target="_blank">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </span>
+            <a href="#" target="">
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     );
   }
