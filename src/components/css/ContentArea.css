@@ -18,8 +18,12 @@ h4 {
     color: #212529;
 }
 
+.about {
+    margin: auto;
+}
+
 @media screen and (min-width: 480px) {
-    .ContentArea {
+    .about {
         width: 50%;
     }
   }

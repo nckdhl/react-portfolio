@@ -26,16 +26,14 @@ export class SideNav extends Component {
   }
 
   render() {
-    const toggleView = (linkTitle) => {
+    const toggleView = linkTitle => {
       toggleNavbar();
       showPage(linkTitle);
-    }
+    };
 
     const { collapsed, toggleNavbar, showPage } = this.props;
     let links = this.state.Links.map(link => (
-      <li key={link.title}
-        onClick={toggleView.bind(this, link.title)}
-      >
+      <li key={link.title} onClick={toggleView.bind(this, link.title)}>
         <a>{link.title}</a>
       </li>
     ));
@@ -52,7 +50,17 @@ export class SideNav extends Component {
           className={`links-container ${collapsed ? "collapsed" : "expanded"}`}
         >
           {links}
-          <li><a href="https://github.com/nckdhl" target="_blank" rel="noopener noreferrer">Github</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/nckdhl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-github">::before</i>
+            </a>
+          </li>
         </ul>
       </div>
     );

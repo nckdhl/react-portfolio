@@ -15,7 +15,7 @@ function ContentArea(props) {
     case "ABOUT":
       console.log("About Me shown");
       content = (
-        <div>
+        <div className="about">
           <p>
             Ut occaecat cillum magna dolore esse labore cupidatat. Commodo enim
             eu mollit aute laborum aute anim nostrud. Quis adipisicing tempor
