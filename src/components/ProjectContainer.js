@@ -10,7 +10,7 @@ export default class ProjectContainer extends Component {
                 {
                     title: 'BUBBLY MAMMOTH', 
                     category: 'Business Website',
-                    thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
+                    thumbnailUrl: require('../assets/images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
                     description: 'Bubbly Mammoth is a business I run together with my wife. ' +
                                  'We sell handmade bubble toys'
@@ -18,7 +18,7 @@ export default class ProjectContainer extends Component {
                 {
                     title: 'IN-BROWSER VOIP CLIENT', 
                     category: 'VOIP Javascript Dialer',
-                    thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
+                    thumbnailUrl: require('../assets/images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
                     description: 'This project is essentially a dialpad to make outgoing voice calls. ' +
                                  'It uses the Twilio programmable voice API. ' +
@@ -27,7 +27,7 @@ export default class ProjectContainer extends Component {
                 {
                     title: 'FOCUS FARM TO-DO APP', 
                     category: 'Vanilla JS and PHP Webapp',
-                    thumbnailUrl: require('../images/wireframes-watercolour-resized.jpg'),
+                    thumbnailUrl: require('../assets/images/wireframes-watercolour-resized.jpg'),
                     altText: 'Website watercolour wireframe',
                     description: 'This was a school project for my PHP and JS course. ' +
                                  'It is a basic to-do list app.'

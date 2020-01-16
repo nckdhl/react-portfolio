@@ -6,7 +6,7 @@ import {
   faGithub,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
-import headshot from "../images/circular-bw-willem-and-i.png";
+import headshot from "../assets/images/circular-bw-willem-and-i.png";
 import "./css/SideNav.css";
 
 export class SideNav extends Component {
@@ -59,8 +59,8 @@ export class SideNav extends Component {
           </ul>
 
           <div className="social">
-            <span className="socialIcon">
-              <a href="http://github.com/nckdhl" target="_blank">
+            <span>
+              <a href="http://github.com/nckdhl" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </span>

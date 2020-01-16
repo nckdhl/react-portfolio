@@ -3,7 +3,7 @@ import "./css/ContentArea.css";
 import "./css/BrandName.css";
 import ProjectContainer from "./ProjectContainer";
 import Form from "./Form";
-import resume from "../images/resume.pdf";
+import resume from "../assets/images/resume.pdf";
 
 function ContentArea(props) {
   let content;
@@ -17,23 +17,36 @@ function ContentArea(props) {
       content = (
         <div className="about">
           <p>
-            Ut occaecat cillum magna dolore esse labore cupidatat. Commodo enim
-            eu mollit aute laborum aute anim nostrud. Quis adipisicing tempor
-            voluptate excepteur ut sit quis reprehenderit enim sint culpa ut. Ex
-            cillum non irure aliqua ut commodo velit sint. Officia est nisi
-            cillum ullamco. Et aliquip sit eiusmod esse voluptate consectetur
-            sit mollit. Consectetur elit consectetur laborum aliqua non veniam
-            in duis nostrud ullamco laboris consequat. Nostrud labore nostrud
-            velit sint excepteur Lorem deserunt ad ullamco culpa ullamco. In
-            laboris in culpa pariatur Lorem eu minim esse ad occaecat. Occaecat
-            exercitation veniam duis nulla fugiat culpa est Lorem. Enim ullamco
-            fugiat non officia incididunt culpa officia exercitation consectetur
-            proident ullamco ad. Aliqua mollit labore laboris do duis labore ut
-            et anim labore ut eu quis. Velit pariatur eu cupidatat ullamco enim
-            excepteur exercitation sint do voluptate deserunt sint deserunt.
-            Anim non aliqua mollit laboris sunt qui sunt. Aliqua id occaecat
-            culpa laborum dolore. Incididunt ullamco veniam minim elit eiusmod
-            ea et. Minim incididunt deserunt consectetur adipisicing do eu.
+            I first developed an interest in software a few years ago when the
+            business I run with my wife inherited a very dated Wordpress website
+            that I needed to turn in to a functioning, attractive online store.
+          </p>
+          <p>
+            At the beginning, in my inexperience, I broke the website, alot.
+            When that happened I needed to call an expensive expert to get my
+            money-making production site back up. At that point I didn't
+            understand such highfalutin concepts as production, staging and
+            local development sites! Copying and pasting code snippets without
+            understanding what they do was the extent of my web dev skills.
+            Being someone who always needs to understand what's going on under
+            the hood, I started watching alot of YouTube tutorials and reading
+            books about this wide world of servers, languages, frameworks and
+            package managers.
+          </p>
+          <p>
+            What I discovered was incredibly fascinating and made me seriously
+            consider a career change when my aspirations in dairy farming hit a
+            dead-end. <em>Ask me over a coffee about that one.</em>
+          </p>
+          <p>
+            Fast forward to 2020. I am now half-way through my studies at Mohawk
+            College and am feeling quite confident in my ability to craft
+            quality software. Through coursework I have been exposed to a
+            variety of programming languages, frameworks and technologies such
+            as Java, .NET, Testing with MSTEST and Selenium, Python, Javascript,
+            PHP, SQL etc. Through my own side-projects I have gained knowledge
+            of, and relative proficiency in Node.js Express, Bootstrap, Git, Django,
+            Linux server admin.,
           </p>
         </div>
       );
