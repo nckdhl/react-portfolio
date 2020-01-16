@@ -29,6 +29,10 @@
 }
 
 body {
-  background-image: url('./assets/images/siora-unsplash.jpg');
+  background-image: url('./assets/images/siora-compressed.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(18, 53, 69);
 }
 
