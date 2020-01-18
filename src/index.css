@@ -1,40 +1,37 @@
 @font-face {
-  font-family: 'bgBlack';
+  font-family: "bgBlack";
 
-	src: url('./assets/fonts/Brandon_blk.woff') format('woff'); 
-	
-	font-weight: normal;
-	font-style: normal;
-	font-smooth: always;
+  src: url("./assets/fonts/Brandon_blk.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+  font-smooth: always;
 }
 
 @font-face {
-  font-family: 'bgBold';
-  
-	src: url('./assets/fonts/Brandon_bld.woff') format('woff');
-	
-	font-weight: normal;
-	font-style: normal;
-	font-smooth: always;
+  font-family: "bgBold";
+
+  src: url("./assets/fonts/Brandon_bld.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+  font-smooth: always;
 }
 
 @font-face {
-  font-family: 'bgMed';
-  
-	src: url('assets/fonts/Brandon_med.woff') format('woff');
+  font-family: "bgMed";
 
-	font-weight: normal;
-	font-style: normal;
-	font-smooth: always;
+  src: url("assets/fonts/Brandon_med.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+  font-smooth: always;
 }
 
 body {
-  background-image: url('./assets/images/siora-compressed.png');
+  background-image: url("./assets/images/siora-compressed.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: rgb(18, 53, 69);
 }
-
-
-
