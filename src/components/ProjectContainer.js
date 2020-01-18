@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "./Project";
+import ("./css/Project.css");
 
 export default class ProjectContainer extends Component {
   constructor(props) {
@@ -62,17 +63,12 @@ export default class ProjectContainer extends Component {
   }
 
   render() {
-    const containerStyles = {
-      display: "flex",
-      justifyContent: "center",
-      flexFlow: "row wrap"
-    };
 
     let projects = this.state.projects.map(project => {
       console.log(project);
       return <Project key={project.title} project={project} />;
     });
 
-    return <div style={containerStyles}>{projects}</div>;
+    return <div id="projectContainer">{projects}</div>;
   }
 }
