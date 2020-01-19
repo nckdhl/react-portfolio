@@ -22,6 +22,10 @@ a:hover {
   color: orange;
 }
 
+.ContentArea object {
+  margin-top: 4em;
+}
+
 .fadein {
   opacity: 0;
   animation-name: appear;
