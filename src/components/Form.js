@@ -32,7 +32,7 @@ export default class Form extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="fadein" id="formContainer">
-        <form data-netlify="true" onSubmit={this.handleSubmit}>
+        <form data-netlify="true" name="contact" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <input
             placeholder="NAME"
