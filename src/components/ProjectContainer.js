@@ -69,6 +69,6 @@ export default class ProjectContainer extends Component {
       return <Project key={project.title} project={project} />;
     });
 
-    return <div id="projectContainer">{projects}</div>;
+    return <div className="fadein" id="projectContainer">{projects}</div>;
   }
 }

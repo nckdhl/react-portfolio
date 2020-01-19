@@ -25,6 +25,7 @@ function ContentArea(props) {
       console.log("Resume shown");
       content = (
         <object
+          className="fadein"
           data={resume}
           type="application/pdf"
           width="1000px"

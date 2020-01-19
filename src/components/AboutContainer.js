@@ -12,12 +12,16 @@ export default class AboutContainer extends Component {
   }
 
   render() {
+    const fadeInDelay = {
+        animationDelay: "1s"
+    }
 
     return (
-        <div className="about">
+        <div className="about fadein">
           <h4>TL;DR</h4>
+          <img className="fadein" style={fadeInDelay} id="interview" alt="interview" src={interview}></img>
           <div className="container">
-            <img className="fadein" id="interview" alt="interview" src={interview}></img>
+            
             <p>
               I am a prospective Software Developer currently in my 4th semester
               of{" "}
@@ -86,10 +90,10 @@ export default class AboutContainer extends Component {
           </div>
           <h4>NOW</h4>
           <div className="container">
-            <img className="fadein" id="coding" alt="coding" src={coding}></img>
+            <img className="fadein" style={fadeInDelay} id="coding" alt="coding" src={coding}></img>
             <p>
               Fast forward to 2020. I am now half-way through my studies at
-              Mohawk College and am feeling confident in my ability to craft
+              Mohawk College and am feeling more and more confident in my ability to craft
               quality software.
             </p>
             <p>
@@ -136,7 +140,7 @@ export default class AboutContainer extends Component {
           </div>
           <h4>THE FUTURE</h4>
           <div className="container">
-            <img className="fadein" id="pair" alt="pair programming" src={pair}></img>
+            <img className="fadein" style={fadeInDelay} id="pair" alt="pair programming" src={pair}></img>
             <p>
               My own side-projects as well as school assignments have shown me
               where my strengths and interests lie. I love full-stack web

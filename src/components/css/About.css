@@ -1,61 +1,61 @@
 .about h4 {
-    color: orange;
-  }
-  
-  .about .container {
-    font-size: 1.2em;
-    margin-top: 0;
-    color: oldlace;
-    padding: 1em;
-  }
-  
-  .AboutMeBlurb {
-    font-family: "bgMed";
-    margin-top: 2em;
-    color: #212529;
-  }
-  
-  .about {
-    margin: 6em auto auto auto;
-    background-color: rgba(33, 37, 41, 0.9);
-    border-radius: 0.3em;
-    padding: 2em;
-    text-align: left;
-  }
-  
-  .about a {
-    color: oldlace;
-  }
-  
-  a:hover {
-    color: orange;
-  }
-  
-  #interview {
-    position: absolute;
-    z-index: -1;
-    top: 220px;
-    right: 200px;
-    width: 50rem;
-  }
-  
-  #coding {
-    position: absolute;
-    z-index: -1;
-    top: 800px;
-    right: 900px;
-    width: 50rem;
-  }
-  
-  #pair {
-    position: absolute;
-    z-index: -1;
-    top: 1200px;
-    right: 200px;
-    width: 50rem;
-  }
-  
-  .fadein {
+  color: orange;
+}
+
+.about .container {
+  /* position: relative; */
+  background-color: rgba(31, 36, 44);
+  font-size: 1.2em;
+  margin-top: 0;
+  color: oldlace;
+  padding: 1em;
+}
+
+.AboutMeBlurb {
+  font-family: "bgMed";
+  margin-top: 2em;
+  color: #212529;
+}
+
+.about {
+  margin: 6em auto auto auto;
+  background-color: rgba(36, 41, 52, 0.9);
+  border-radius: 0.3em;
+  padding: 2em;
+  text-align: left;
+}
+
+.about a {
+  color: oldlace;
+}
+
+a:hover {
+  color: orange;
+}
+
+.about img {
+  position: absolute;
+  z-index: -1;
+  width: 35%;
+  min-width: 20rem;
+}
+
+#interview {
+  top: 250px;
+  right: 150px;
+}
+
+#coding {
+  top: 1100px;
+  right: 1100px;
+}
+
+#pair {
+  top: 1700px;
+  right: 200px;
+}
+
+/* .fadein {
     opacity: 0;
     animation-name: appear;
     animation-duration: 4s;
@@ -73,10 +73,25 @@
     100% {
       opacity: 1;
     }
+  } */
+
+@media screen and (min-width: 480px) {
+  .about {
+    width: 50%;
   }
-  
-  @media screen and (min-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .about {
-      width: 50%;
+        padding: 1em 0.3em 1em 0.3em;
     }
+  #interview {
+    display: none;
   }
+  #coding {
+    display: none;
+  }
+  #pair {
+    display: none;
+  }
+}
