@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import resume from "../assets/images/resume.pdf";
 import("./css/Form.css");
 
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 export default class Form extends Component {
   constructor(props) {
@@ -28,17 +28,40 @@ export default class Form extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-
   render() {
     const { name, email, message } = this.state;
     return (
       <div className="fadein" id="formContainer">
-        <form name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
-          <input placeholder="NAME" type="text" name="name" value={name} onChange={this.handleChange} required />
+        <form
+          data-netlify="true"
+          onSubmit={this.handleSubmit}
+        >
+          <input
+            placeholder="NAME"
+            type="text"
+            name="name"
+            value={name}
+            onChange={this.handleChange}
+            required
+          />
 
-          <input placeholder="EMAIL" type="email" name="email" value={email} onChange={this.handleChange} required />
+          <input
+            placeholder="EMAIL"
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            required
+          />
 
-          <textarea placeholder="MESSAGE" type="text" name="message" value={message} onChange={this.handleChange} required ></textarea>
+          <textarea
+            placeholder="MESSAGE"
+            type="text"
+            name="message"
+            value={message}
+            onChange={this.handleChange}
+            required
+          ></textarea>
 
           <button type="submit">SEND</button>
         </form>
