@@ -20,7 +20,7 @@ export default class Form extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Thanks for reaching out! I'll get back to you as soon as I can."))
       .catch(error => alert(error));
 
     e.preventDefault();
