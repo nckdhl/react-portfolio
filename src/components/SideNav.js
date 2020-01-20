@@ -63,7 +63,7 @@ export class SideNav extends Component {
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </span>
-            <a href="#" target="">
+            <a href="http://linkedin.com/in/nick-dahl" target="">
               <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
             </a>
           </div>

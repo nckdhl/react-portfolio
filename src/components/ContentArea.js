@@ -24,6 +24,7 @@ function ContentArea(props) {
       break;
     case "RESUME":
       console.log("Resume shown");
+      if ()
       content = (
         <object
           className="fadein"
