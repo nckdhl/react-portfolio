@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/ContentArea.css";
 import "./css/BrandName.css";
+import Header from "./Header";
 import AboutContainer from "./AboutContainer";
 import ProjectContainer from "./ProjectContainer";
 import Form from "./Form";
@@ -42,23 +43,8 @@ function ContentArea(props) {
 
   return (
     <div className="ContentArea">
-      <div>
-        <h1 className="brand-name" href="#">
-          <span className="im">I'M &nbsp;</span>
-          <span className="n">N</span>
-          <span className="vowel">I</span>
-          <span className="ck">CK</span>
-          <span className="space">&nbsp;</span>
-          <span className="d">D</span>
-          <span className="vowel">A</span>
-          <span className="hl">HL</span>
-          <span className="dot">,</span>
-        </h1>
-      </div>
-      <div className="AboutMeBlurb">
-        <h4>STUDENT OF SOFTWARE DEVELOPMENT AT MOHAWK COLLEGE.</h4>
-      </div>
-      {content}
+      <Header title={props.showPage} />
+      { content }
     </div>
   );
 }

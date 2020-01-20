@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { MenuButton } from "./MenuButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  fab,
   faGithub,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";

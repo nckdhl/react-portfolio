@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  fab,
   faGithub,
-  faExpeditedssl,
   faChrome
 } from "@fortawesome/free-brands-svg-icons";
 
