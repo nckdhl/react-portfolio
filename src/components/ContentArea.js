@@ -24,18 +24,40 @@ function ContentArea(props) {
       break;
     case "RESUME":
       console.log("Resume shown");
-      if ()
-      content = (
-        <object
-          className="fadein"
-          data={resume}
-          type="application/pdf"
-          width="1000px"
-          height="1000px"
-        >
-          Resume
-        </object>
-      );
+      if (document.documentElement.clientWidth > 768){
+        content = (
+          <object
+            className="fadein"
+            data={resume}
+            type="application/pdf"
+            width="1000px"
+            height="1000px"
+          >
+            Resume
+          </object>
+        );
+      } else {
+        console.log("Tried to show download");
+        const downloadStyles = {
+          textDecoration: "none",
+          fontSize: "1.3em",
+          color: "orange"
+        }
+
+        const buttonStyles = {
+          fontFamily: "bgBold",
+          backgroundColor: "rgb(33, 37, 41)",
+          padding: "1em",
+          border: "none",
+          borderRadius: "1em",
+          marginTop: "50px"
+        }
+        content = (
+          <button style={buttonStyles}>
+            <a href={ resume } style={downloadStyles} target="_blank">Download</a>
+          </button>
+        );
+      }
       break;
     default:
       console.log("Empty action");
