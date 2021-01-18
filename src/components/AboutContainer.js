@@ -23,7 +23,7 @@ export default class AboutContainer extends Component {
         ></img>
         <div className="container">
           <p>
-            I am a prospective Software Developer currently in my 4th semester
+            I am a prospective Software Developer currently in my 5th semester
             of{" "}
             <a
               href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technology-software-development-559"
@@ -32,14 +32,13 @@ export default class AboutContainer extends Component {
             >
               studies at Mohawk College
             </a>
-            . I am seeking a student co-op or intern position where I can make
+            . I am seeking a student co-op or intern position for Spring/Summer 2021 where I can make
             an active contribution and gain industry experience.
           </p>
           <p>
             I have a keen interest in any and all kinds of development work,
-            from RESTful web services with Node.js to Windows desktop
-            applications with WinForms. Through my coursework, personal projects
-            and self-directed learning I have gained a foundational knowledge of
+            from RESTful web services with Node.js to programming with C à la Kernighan & Ritchie.
+            Through two co-op work terms, contract work and personal projects I have gained a foundational knowledge of
             software development that is ready to be applied in the workplace.
           </p>
           <p>
@@ -54,7 +53,7 @@ export default class AboutContainer extends Component {
             or navigate to my Projects to see what I've been working on lately.
           </p>
         </div>
-        <h4>THEN</h4>
+        <h4>BACK THEN</h4>
         <div className="container">
           <p>
             I first developed an interest in software a few years ago when the
@@ -96,22 +95,27 @@ export default class AboutContainer extends Component {
             src={coding}
           ></img>
           <p>
-            Fast forward to 2020. I am now half-way through my studies at Mohawk
+            Fast forward to 2021. I am now nearly done my studies at Mohawk
             College and am feeling more and more confident in my ability to
             craft quality software.
           </p>
           <p>
-            Through coursework I have been exposed to a variety of programming
-            languages, frameworks and technologies such as Java, .NET, Testing
-            with MSTEST and Katalon Suite, Python, Javascript, PHP, SQL etc.
+            During my two co-op work terms in 2020, I worked on a variety of different projects.
+            The first part of the work term had me working on a large legacy EMR application. 
+            I used Java EE's JAX-RS libraries to build a REST API for a backend feature that was used to search for patients, doctors, and other entities.
+            In that same app, I leveraged Webpack and vanilla JS to overhaul an important billing UI without the overhead of a frontend framework.
+            During the second half of the work term, I worked on a more Dev-ops related project for a client whose application had a complex Node.js microservices architecture.
+            I independently researched, built and documented a proof-of-concept ELK installation to solve their distributed logging problem.
+            At the same time, I taught myself Ansible in order to automate the configuration of the proof-of-concept that I built, in both an AWS environment and on-prem KVM environment.
+            The whole co-op experience taught me an incredible amount about the SDLC, communication with clients and stakeholders and coding as a team.
           </p>
           <p>
-            Through my own side-projects I have gained knowledge of, and
-            relative proficiency in Node.js Express, Bootstrap, Git, Django,
-            Wordpress and Linux server admin.
+            Through coursework and my own studies I have learnt about data structures and algorithms,
+            object-oriented design and test-driven development, among other computer science concepts and
+            software engineering methodologies.
           </p>
           <p>
-            I'm currently working on building out my{" "}
+            Last year I worked on a few different side-projects such as this{" "}
             <a
               href="https://github/nckdhl/vanilla-twilio-node"
               target="_blank"
@@ -126,18 +130,17 @@ export default class AboutContainer extends Component {
             the back-end with Node.js Express and the front-end with vanilla JS.
           </p>
           <p>
-            If I have any spare time, you'll find me brushing up on my higher
-            order array functions. On my bedside table is a copy of Marijn
-            Haverbeijn's influential book{" "}
+            If I have any spare time, you'll find me brushing up my data structures and algorithms. 
+            On my bedside table is a copy of 
+            Aditya Bhargava's influential book{" "}
             <a
               href="https://www.amazon.com/gp/product/1593279507/ref=dbs_a_def_rwt_bibl_vppi_i0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              'Eloquent Javascript'
+              'Grokking Algorithms'
             </a>
-            . This book has actually turned me in to a fan of the much-maligned
-            Javascript. There's just way to much you can do with the language!
+            . This book has transformed the way I think about programming problems and helped make DS & A a less intimidating domain.
           </p>
         </div>
         <h4>THE FUTURE</h4>
@@ -167,15 +170,13 @@ export default class AboutContainer extends Component {
             In the future, I'm hoping to find a position that allows me to
             pursue this interest and contribute to modern full-stack web
             applications. I am, however, passionate about all things computer
-            science. At this point, even maintaining a legacy Windows desktop
-            application or monolithic Java back-end seems absoloutely
-            fascinating to me.
+            science. What really excites me is where I can find an intersection between my other interests and software engineering.
+            For example, agriculture and the Internet of Things.
           </p>
           <p>
             Over the next couple years, I'm hoping to further explore what can
             be done in the Javascript ecosystem and start contributing to some
-            open-source projects. I also want to dive in to the Python
-            microframework Flask and ASP.NET CORE's Web API.
+            open-source projects. I also want to dive into Golang and learn more about containers.
           </p>
         </div>
       </div>
