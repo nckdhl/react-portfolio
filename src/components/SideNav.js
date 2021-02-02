@@ -15,7 +15,7 @@ export class SideNav extends Component {
     this.state = {
       Links: [
         {
-          title: "ABOUT"
+          title: "ABOUT ME TEST"
         },
         {
           title: "PROJECTS"
